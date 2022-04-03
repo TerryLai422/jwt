@@ -1,0 +1,6 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://jwt-registry:8081/eureka
+  instance:
+    hostname: jwt-registry
