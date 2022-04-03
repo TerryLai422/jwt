@@ -22,9 +22,9 @@ app:
   config:
     keycloak:
       url: http://localhost:8080/auth
-      realm: SpringBootKeycloak
-      client-secret: d0cce31e-99a3-4b45-bfb4-2283cc32e8b3
-      client-id: internet-banking-core-client
+      realm: ThinkboxJWTKeycloak
+      client-secret: bc3eece8-221d-48ca-8751-1604fa76cbc2
+      client-id: thinkbox-jwt-client
 
 spring:
   ## API SECURITY WITH KEYCLOAK PROVIDER
