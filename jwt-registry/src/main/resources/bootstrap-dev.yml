@@ -1,0 +1,4 @@
+spring:
+  cloud:
+    config:
+      uri: http://jwt-config:8090
