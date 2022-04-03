@@ -3,4 +3,4 @@ eureka:
     service-url:
       defaultZone: http://md-registry:8081/eureka
   instance:
-    hostname: jwt-endpoint-1
+    hostname: jwt-endpoint-2
