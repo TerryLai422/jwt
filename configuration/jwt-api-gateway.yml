@@ -83,8 +83,8 @@ spring:
             - Path=/utility-payment/**
           filters:
             - StripPrefix=1
-        - id: jwt-endpoint-1
-          uri: lb://jwt-endpoint-1
+        - id: jwt-end-point-1
+          uri: lb://jwt-end-point-1
           predicates:
             - Path=/end-point-1/**
           filters:
