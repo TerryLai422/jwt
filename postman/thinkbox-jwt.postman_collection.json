@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "0e308b07-138c-4894-a900-3c7535d9093a",
+		"name": "thinkbox-jwt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "jwt-microservices",
+			"item": [
+				{
+					"name": "health",
+					"item": [
+						{
+							"name": "endpoint-1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_gateway_host}}/endpoint-1/actuator/health",
+									"host": [
+										"{{api_gateway_host}}"
+									],
+									"path": [
+										"endpoint-1",
+										"actuator",
+										"health"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "endpoint-2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_gateway_host}}/endpoint-2/actuator/health",
+									"host": [
+										"{{api_gateway_host}}"
+									],
+									"path": [
+										"endpoint-2",
+										"actuator",
+										"health"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "api",
+					"item": [
+						{
+							"name": "endpoint-1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Hello World\",\n    \"email\": \"helloworid@gmail.com\",\n    \"greeting\": \"Hello World\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_gateway_host}}/endpoint-1/echo",
+									"host": [
+										"{{api_gateway_host}}"
+									],
+									"path": [
+										"endpoint-1",
+										"echo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "endpoint-2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Hello World\",\n    \"email\": \"helloworid@gmail.com\",\n    \"greeting\": \"Hello World\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_gateway_host}}/endpoint-2/echo",
+									"host": [
+										"{{api_gateway_host}}"
+									],
+									"path": [
+										"endpoint-2",
+										"echo"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "oauth2",
+				"oauth2": [
+					{
+						"key": "password",
+						"value": "123",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "jwt-user1",
+						"type": "string"
+					},
+					{
+						"key": "tokenName",
+						"value": "thinkbox-jwt-token",
+						"type": "string"
+					},
+					{
+						"key": "scope",
+						"value": "email",
+						"type": "string"
+					},
+					{
+						"key": "grant_type",
+						"value": "password_credentials",
+						"type": "string"
+					},
+					{
+						"key": "clientSecret",
+						"value": "{{keycloack_client_secret}}",
+						"type": "string"
+					},
+					{
+						"key": "clientId",
+						"value": "{{keycloack_client_id}}",
+						"type": "string"
+					},
+					{
+						"key": "accessTokenUrl",
+						"value": "{{keycloack_host}}/auth/realms/{{keycloack_realm}}/protocol/openid-connect/token",
+						"type": "string"
+					},
+					{
+						"key": "addTokenTo",
+						"value": "header",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
