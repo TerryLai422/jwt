@@ -23,7 +23,7 @@ app:
     keycloak:
       url: http://localhost:8080/auth
       realm: ThinkboxJWTKeycloak
-      client-secret: bc3eece8-221d-48ca-8751-1604fa76cbc2
+      client-secret: G5ZRAl21ScQHdSXX4koYCGyl7sxzWyQw
       client-id: thinkbox-jwt-client
 
 spring:

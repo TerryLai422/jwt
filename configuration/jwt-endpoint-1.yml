@@ -17,4 +17,4 @@ app:
       server-url: http://localhost:8080/auth
       realm: ThinkboxJWTKeycloak
       clientId: thinkbox-jwt-client
-      client-secret: bc3eece8-221d-48ca-8751-1604fa76cbc2
+      client-secret: G5ZRAl21ScQHdSXX4koYCGyl7sxzWyQw
