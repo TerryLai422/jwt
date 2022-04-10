@@ -7,6 +7,10 @@ Spring Cloud Components: </br>
 - API gateway</br>
 </br>
 Other Components:</br>
+- Eureka Discovery Server</br>
+- Config Server</br>
+- API gateway</br>
+</br>
 - Keycloak (with MySQL)</br>
 - Postman</br>
 - Docker</br>
