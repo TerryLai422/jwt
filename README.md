@@ -8,6 +8,7 @@ Spring Cloud Components: </br />
 - API gateway<br />
 <br />
 Other Components:<br />
+<br />
 - Keycloak (with MySQL)<br />
 - Postman<br />
 - Docker</br />
