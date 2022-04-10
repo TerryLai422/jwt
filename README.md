@@ -1,9 +1,14 @@
 # jwt
+Authentication and authorization with Keycloak.<br />
 <br />
-This one uses the following spring cloud components: </br />
+Spring Cloud Components: </br />
 <br />
-1. Eureka Discovery Server<br />
-2. Config Server<br />
-3. API gateway<br />
+- Eureka Discovery Server<br />
+- Config Server<br />
+- API gateway<br />
 <br />
-It also uses Keycloak as an authentication server.<br />
+Other Components:<br />
+- Keycloak (with MySQL)<br />
+- Postman<br />
+- Docker</br />
+<br />
