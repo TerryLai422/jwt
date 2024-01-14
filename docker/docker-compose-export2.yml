@@ -1,0 +1,23 @@
+version: '3'
+networks: 
+  keycloak-network:
+    driver: bridge
+
+services:
+  keycloak:
+    image: jboss/keycloak:latest
+    networks:
+      - keycloak-network
+    ports:
+      - 8080:8080
+    environment:
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: admin
+    volumes:
+      - /Users/admin/data:/dataexport
+    command:
+      - "-Dkeycloak.migration.action=export"
+      - "-Dkeycloak.migration.provider=singleFile"
+      - "-Dkeycloak.migration.realmName=ThinkboxJWTKeycloak"
+      - "-Dkeycloak.migration.usersExportStrategy=REALM_FILE"
+      - "-Dkeycloak.migration.file=/dataexport/ThinkboxJWTKeycloak.json"
